@@ -28,7 +28,10 @@ public class Food extends Rectangle {
 		setTranslateX(positionX * Main.blockSize);
 		setTranslateY(positionY * Main.blockSize);
 		
+		//fills in the the Food object with a random color
 		setFill(randomColor());
+		
+		//sets the stroke of the Food object with a random color
 		setStroke(randomColor());
 	}	
 	
