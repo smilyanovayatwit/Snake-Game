@@ -17,11 +17,12 @@ import javafx.stage.Stage;
  * 
  * This is a simple Snake game using JavaFX. The player maneuvers a line, the snake, using
  * the arrow keys. The player controls the snake to get the food, the rectangle. The food is 
- * given a new random position on the screen everytime the snake eats it. Whenever the snake 
- * eats the food, it grows in length and the score increases by 1 point. If the snake touches 
- * its body, a "Game Over!" message is displayed in a pop up window with the player's score. 
- * After the "OK" button is pressed on pop up window the game starts over with the snake being 
- * reset to its initial length of 5 blocks and the score being reset to 0 points.
+ * given a new random position on the screen every time the snake eats it and a new random 
+ * color. Whenever the snake eats the food, it grows in length and the score increases by 1 
+ * point. If the snake touches its body, a "Game Over!" message is displayed in a pop up window
+ * with the player's score. After the "OK" button is pressed on pop up window the game starts 
+ * over with the snake being reset to its initial length of 5 blocks and the score being reset 
+ * to 0 points.
  * 
  */
 

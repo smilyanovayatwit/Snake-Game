@@ -1,4 +1,6 @@
+import java.util.Random;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
 
 public class Food extends Rectangle {
@@ -26,7 +28,19 @@ public class Food extends Rectangle {
 		setTranslateX(positionX * Main.blockSize);
 		setTranslateY(positionY * Main.blockSize);
 		
-		setFill(Color.LIGHTGREEN);
-		setStroke(Color.GREEN);
+		//fills in the the Food object with a random color
+		setFill(randomColor());
+		
+		//sets the stroke of the Food object with a random color
+		setStroke(randomColor());
 	}	
+	
+	//Creates a random color for the Food object whenever the method is called
+	public Paint randomColor() {
+		Random random = new Random();
+		int r = random.nextInt(255);
+		int g = random.nextInt(255);
+		int b = random.nextInt(255);
+		return Color.rgb(r,g,b);
+	}
 }
