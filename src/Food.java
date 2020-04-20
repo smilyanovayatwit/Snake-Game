@@ -1,5 +1,4 @@
 import java.util.Random;
-
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
